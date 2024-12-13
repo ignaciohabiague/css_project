@@ -13,15 +13,14 @@ body {
 
 .header {
   background-color: #1F2937;
-  padding: 20px 40px;
 }
 
 .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 20px 120px;
+
 }
 
 .logo {
@@ -42,7 +41,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 40px; 
+  padding: 60px 120px; 
   background-color: #1F2937;
   color: #F9FAF8;
 }
@@ -57,6 +56,11 @@ body {
   color: #E5E7EB;
   margin-bottom: 30px; 
   font-size: 18px;
+}
+
+.hero img{
+  height: 200px;
+  max-width: 100%;
 }
 
 .hero .btn-primary {
@@ -84,22 +88,32 @@ body {
 .info-boxes {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 20px; 
   flex-wrap: wrap; 
 }
 
 .info-box {
-  border: 2px solid #3882F6;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   flex: 1;
   max-width: 200px;
   color: #1F2937;
-  margin: 10px; 
   text-align: center;
 }
 
+.box{
+  border: 2px solid #3882F6;
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px; 
+}
+
 .quote-section {
-  padding: 60px 40px; 
+  padding: 60px 120px; 
   background-color: #E5E7EB;
   text-align: center;
   font-style: italic;
@@ -113,23 +127,27 @@ body {
   margin-bottom: 20px; 
 }
 
-.quote-section cite {
+.quote-section .quote-section-text {
   display: block;
-  margin-top: 10px;
   font-weight: bold;
+  float: right;  
 }
 
 .cta-section {
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #3882F6;
   color: #FFF;
-  padding: 60px 40px;
+  padding: 60px 160px;
   text-align: center;
+  margin: 80px 120px;
 }
 
 .cta-section .btn-primary {
   background-color: #FFF;
   color: #3882F6;
-  margin-top: 20px; 
   padding: 15px 30px;
   font-weight: 900;
   border: none;
